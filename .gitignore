@@ -1,0 +1,17 @@
+# --- SEGURIDAD CLOUD (CRÍTICO) ---
+# Ignorar llaves de cuentas de servicio de Google Cloud
+*.json
+# Archivos de variables de entorno con secretos
+.env
+.env.local
+
+# --- DEPENDENCIAS ---
+# Ignorar librerías descargadas (se instalan en la nube, no se suben)
+node_modules/
+__pycache__/
+*.pyc
+
+# --- ARCHIVOS DE SISTEMA Y LOGS ---
+*.log
+.DS_Store
+Thumbs.db
