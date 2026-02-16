@@ -1,0 +1,133 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Página-1" id="cszHGmrnDcF5GPM-Cg4q">
+    <mxGraphModel dx="2946" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Inicio: Solicitud HTTP" vertex="1">
+          <mxGeometry height="54" width="214" x="181" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Cargar Variables de Entorno" vertex="1">
+          <mxGeometry height="54" width="259" x="158" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Autenticarse con Google Cloud" vertex="1">
+          <mxGeometry height="78" width="260" x="158" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Leer datos desde Google Sheets" vertex="1">
+          <mxGeometry height="78" width="260" x="158" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-5" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="¿Hay datos?" vertex="1">
+          <mxGeometry height="136" width="136" x="220" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Procesar datos con Pandas" vertex="1">
+          <mxGeometry height="54" width="248" x="247" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Aplicar reglas de negocio&#xa;CUM y Estado" vertex="1">
+          <mxGeometry height="78" width="240" x="251" y="798" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Generar tabla HTML" vertex="1">
+          <mxGeometry height="54" width="204" x="269" y="926" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-9" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Construir correo electrónico" vertex="1">
+          <mxGeometry height="78" width="260" x="241" y="1054" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-10" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Enviar correo vía SMTP" vertex="1">
+          <mxGeometry height="54" width="223" x="259" y="1182" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Registrar log de éxito" vertex="1">
+          <mxGeometry height="54" width="213" x="396" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Responder HTTP 200 OK" vertex="1">
+          <mxGeometry height="54" width="231" x="387" y="1414" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-13" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Registrar log de error" vertex="1">
+          <mxGeometry height="54" width="213" x="120" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-14" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Responder HTTP 500 Error" vertex="1">
+          <mxGeometry height="54" width="247" x="20" y="1414" as="geometry" />
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-15" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-16" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-17" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-18" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-19" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-5" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.74;entryX=0.35;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-14" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="73" y="657" />
+              <mxPoint x="73" y="1389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-20" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.89;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-6" value="Sí">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="371" y="657" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-21" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-22" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-7" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-23" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-8" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-24" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-9" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-25" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-10" style="curved=1;startArrow=none;endArrow=block;exitX=0.75;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="502" y="1273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-26" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-11" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-27" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-10" style="curved=1;startArrow=none;endArrow=block;exitX=0.23;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-13" value="Error">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="226" y="1273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ttwOmdOT_JDtu04xpLOa-28" edge="1" parent="1" source="ttwOmdOT_JDtu04xpLOa-13" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.67;entryY=0;rounded=0;" target="ttwOmdOT_JDtu04xpLOa-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="226" y="1389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

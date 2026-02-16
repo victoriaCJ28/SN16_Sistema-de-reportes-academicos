@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Página-1" id="zDfuPOzeKnF87CBdFI1J">
+    <mxGraphModel dx="2946" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Usuario / Scheduler / Sistema Externo" vertex="1">
+          <mxGeometry height="78" width="260" x="312" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Google Cloud Function&#xa;HTTP Trigger" vertex="1">
+          <mxGeometry height="78" width="222" x="331" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Google Sheets&#xa;Documento Académico" vertex="1">
+          <mxGeometry height="78" width="222" x="20" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Google Sheets API" vertex="1">
+          <mxGeometry height="54" width="188" x="37" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Pandas&#xa;Procesamiento de Datos" vertex="1">
+          <mxGeometry height="78" width="232" x="275" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Gmail SMTP SSL" vertex="1">
+          <mxGeometry height="54" width="172" x="557" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Destinatarios DAC" vertex="1">
+          <mxGeometry height="54" width="187" x="549" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Hoja Log_Envios" vertex="1">
+          <mxGeometry height="54" width="176" x="779" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-9" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-2" value="HTTP Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-10" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-2" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.85;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-4" value="Autenticación">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="131" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-11" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-3" value="Lectura de datos">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-12" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.29;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-13" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=0;entryX=0.5;entryY=1;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-2" value="Datos procesados">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="442" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-14" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.96;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-6" value="Construcción HTML">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="643" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-15" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-7" value="Correo enviado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBax3iRtzQn4ShdAJx-Z-16" edge="1" parent="1" source="YBax3iRtzQn4ShdAJx-Z-2" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.75;entryX=0.5;entryY=0;rounded=0;" target="YBax3iRtzQn4ShdAJx-Z-8" value="Registro de evento">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="867" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
